@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Learning App</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <% if (user) { %>
+      <span>Good day, <%= user.username %>!</span>
+      <a href="/users/logout">Logout</a>
+      <a href="/">Home</a>
+      <a href="/cards">My flashcards</a>
+    <% } else { %>
+      <a href="/users/register">Register</a>
+      <a href="/users/login">Login</a>
+      <a href="/">Home</a>
+    <% } %>
+  </nav>
+  <main>
+    <% if (error) { %>
+      <p class="error-message"><%= error %></p>
+    <% } %>
+    <% if (success) { %>
+      <p class="success-message"><%= success %></p>
+    <% } %>
+    <%- body %>
+  </main>
+</body>
+</html>

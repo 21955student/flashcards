@@ -1,0 +1,10 @@
+<div class="index-container">
+  <h1>Language Learning App</h1>
+
+  <% if (!user) { %>
+    <p>Please <a href="/users/login">login</a> or <a href="/users/register">register</a> to start creating flashcards.</p>
+  <% } else { %>
+    <h2>Welcome, <%= user.username %>!</h2>
+    <p><a href="/cards">View and manage your flashcards</a>.</p>
+  <% } %>
+</div>

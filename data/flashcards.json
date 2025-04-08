@@ -1,0 +1,122 @@
+[
+  {
+    "id": 2,
+    "userId": 1,
+    "word": "Hola",
+    "translation": "Hello",
+    "topic": "Greetings",
+    "exampleSentence": "Hola, ¿cómo estás?",
+    "difficulty": "easy",
+    "lastReviewed": "2025-04-08T10:08:42.282Z",
+    "reviewCount": 14,
+    "tags": [
+      "greeting",
+      "basic"
+    ]
+  },
+  {
+    "id": 3,
+    "userId": 1,
+    "word": "Comida",
+    "translation": "Food",
+    "topic": "Daily Life",
+    "exampleSentence": "La comida en este restaurante es deliciosa.",
+    "difficulty": "medium",
+    "lastReviewed": "2025-04-08T08:59:09.870Z",
+    "reviewCount": 6,
+    "tags": [
+      "noun",
+      "everyday"
+    ]
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "word": "Estudiar",
+    "translation": "To study",
+    "topic": "Verbs",
+    "exampleSentence": "Voy a estudiar para el examen mañana.",
+    "difficulty": "medium",
+    "lastReviewed": "2025-04-05T18:45:00.000Z",
+    "reviewCount": 3,
+    "tags": [
+      "verb",
+      "action"
+    ]
+  },
+  {
+    "id": 5,
+    "userId": 1,
+    "word": "Sol",
+    "translation": "Sun",
+    "topic": "Nature",
+    "exampleSentence": "El sol brilla intensamente hoy.",
+    "difficulty": "easy",
+    "lastReviewed": "2025-04-08T08:59:06.740Z",
+    "reviewCount": 8,
+    "tags": [
+      "noun",
+      "weather"
+    ]
+  },
+  {
+    "id": 6,
+    "userId": 1,
+    "word": "Rápidamente",
+    "translation": "Quickly",
+    "topic": "Adverbs",
+    "exampleSentence": "Ella corre rápidamente hacia la meta.",
+    "difficulty": "hard",
+    "lastReviewed": "2025-04-03T16:20:00.000Z",
+    "reviewCount": 2,
+    "tags": [
+      "adverb",
+      "advanced"
+    ]
+  },
+  {
+    "id": 7,
+    "userId": 1,
+    "word": "Familia",
+    "translation": "Family",
+    "topic": "Relationships",
+    "exampleSentence": "Mi familia se reúne cada domingo.",
+    "difficulty": "easy",
+    "lastReviewed": "2025-04-08T08:59:12.107Z",
+    "reviewCount": 9,
+    "tags": [
+      "noun",
+      "social"
+    ]
+  },
+  {
+    "id": 8,
+    "userId": 1,
+    "word": "Trabajar",
+    "translation": "To work",
+    "topic": "Verbs",
+    "exampleSentence": "Necesito trabajar en mi proyecto esta tarde.",
+    "difficulty": "medium",
+    "lastReviewed": "2025-04-01T13:50:00.000Z",
+    "reviewCount": 4,
+    "tags": [
+      "verb",
+      "daily"
+    ]
+  },
+  {
+    "id": 9,
+    "userId": 1,
+    "word": "Amigo",
+    "translation": "Friend",
+    "topic": "Relationships",
+    "exampleSentence": "Mi amigo vive en Madrid.",
+    "difficulty": "easy",
+    "lastReviewed": "2025-03-31T08:30:00.000Z",
+    "reviewCount": 6,
+    "tags": [
+      "noun",
+      "social"
+    ]
+  }
+]

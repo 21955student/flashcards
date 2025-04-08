@@ -1,0 +1,31 @@
+<div class="create-card-container">
+  <h1>Create Flashcard</h1>
+
+  <form action="/cards/create" method="POST">
+    <label for="word">Word:</label>
+    <input type="text" id="word" name="word" required>
+    
+    <label for="translation">Translation:</label>
+    <input type="text" id="translation" name="translation" required>
+    
+    <label for="topic">Topic (optional):</label>
+    <input type="text" id="topic" name="topic">
+    
+    <label for="exampleSentence">Example Sentence (optional):</label>
+    <input type="text" id="exampleSentence" name="exampleSentence">
+    
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty" name="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    
+    <label for="tags">Tags (comma-separated, optional):</label>
+    <input type="text" id="tags" name="tags" placeholder="e.g., noun, formal">
+    
+    <button type="submit">Create</button>
+  </form>
+
+  <a href="/cards">Back to Flashcards</a>
+</div>

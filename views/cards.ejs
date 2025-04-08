@@ -1,0 +1,40 @@
+<div class="cards-container">
+  <h1>List of flashcards</h1>
+
+  <a href="/cards/create">Create New Flashcard</a>
+
+  <% if (cards.length === 0) { %>
+    <p>No flashcards yet. Create one to get started!</p>
+  <% } else { %>
+    <div class="cards-grid">
+      <% cards.forEach(card => { %>
+        <div class="card">
+          <strong><%= card.word %></strong> - <%= card.translation %>
+          <% if (card.topic) { %>
+            <p>Topic: <%= card.topic %></p>
+          <% } %>
+          <% if (card.exampleSentence) { %>
+            <p>Example: <%= card.exampleSentence %></p>
+          <% } %>
+          <p>Difficulty: <%= card.difficulty %></p>
+          <% if (card.lastReviewed) { %>
+            <p>Last Reviewed: <%= new Date(card.lastReviewed).toLocaleString() %></p>
+          <% } %>
+          <p>Review Count: <%= card.reviewCount || 0 %></p>
+          <% if (card.tags && card.tags.length > 0) { %>
+            <p>Tags: <%= card.tags.join(', ') %></p>
+          <% } %>
+          <div class="card-actions">
+            <a href="/cards/<%= card.id %>/update">Edit</a>
+            <form action="/cards/<%= card.id %>/delete" method="POST">
+              <button type="submit" class="delete">Delete</button>
+            </form>
+            <form action="/cards/<%= card.id %>/review" method="POST">
+              <button type="submit" class="review">Mark Reviewed</button>
+            </form>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  <% } %>
+</div>

@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5;
+  color: #333333;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #4A90E2;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav span {
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #D1E8FF;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4A90E2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #4A90E2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2A6DB0;
+}
+
+form {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card-actions form {
+  display: inline-block;
+  margin: 0;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #4A90E2;
+  outline: none;
+}
+
+button {
+  background-color: #4A90E2;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2A6DB0;
+}
+
+.error-message {
+  background-color: #FFEEEE;
+  color: #D32F2F;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #E8F5E9;
+  color: #388E3C;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.index-container {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.index-container p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.login-container,
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.cards-container {
+  margin-top: 20px;
+}
+
+.cards-container a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card strong {
+  font-size: 1.2rem;
+  color: #4A90E2;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.card-actions a,
+.card-actions button {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  margin: 0;
+}
+
+.card-actions button.delete {
+  background-color: #D32F2F;
+}
+
+.card-actions button.delete:hover {
+  background-color: #B71C1C;
+}
+
+.card-actions button.review {
+  background-color: #388E3C;
+}
+
+.card-actions button.review:hover {
+  background-color: #2E7D32;
+}
+
+.create-card-container,
+.update-card-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create-card-container a,
+.update-card-container a {
+  display: inline-block;
+  margin-top: 10px;
+}

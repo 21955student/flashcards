@@ -1,0 +1,31 @@
+<div class="update-card-container">
+  <h1>Update Flashcard</h1>
+
+  <form action="/cards/<%= card.id %>/update" method="POST">
+    <label for="word">Word:</label>
+    <input type="text" id="word" name="word" value="<%= card.word %>" required>
+    
+    <label for="translation">Translation:</label>
+    <input type="text" id="translation" name="translation" value="<%= card.translation %>" required>
+    
+    <label for="topic">Topic (optional):</label>
+    <input type="text" id="topic" name="topic" value="<%= card.topic || '' %>">
+    
+    <label for="exampleSentence">Example Sentence (optional):</label>
+    <input type="text" id="exampleSentence" name="exampleSentence" value="<%= card.exampleSentence || '' %>">
+    
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty" name="difficulty">
+      <option value="easy" <%= card.difficulty === 'easy' ? 'selected' : '' %>>Easy</option>
+      <option value="medium" <%= card.difficulty === 'medium' ? 'selected' : '' %>>Medium</option>
+      <option value="hard" <%= card.difficulty === 'hard' ? 'selected' : '' %>>Hard</option>
+    </select>
+    
+    <label for="tags">Tags (comma-separated, optional):</label>
+    <input type="text" id="tags" name="tags" value="<%= card.tags ? card.tags.join(', ') : '' %>" placeholder="e.g., noun, formal">
+    
+    <button type="submit">Update</button>
+  </form>
+
+  <a href="/cards">Back to Flashcards</a>
+</div>
